@@ -1,0 +1,7 @@
+FROM openjdk:slim-buster
+WORKDIR /usr/src/myapp
+
+COPY helloWorld.java .
+
+RUN javac helloWorld.java
+CMD ["java", "helloWorld"]

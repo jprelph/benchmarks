@@ -1,0 +1,8 @@
+FROM golang 
+WORKDIR /usr/src/myapp
+
+COPY helloWorld.go .
+
+RUN go build helloWorld.go
+
+CMD ["./helloWorld"]
